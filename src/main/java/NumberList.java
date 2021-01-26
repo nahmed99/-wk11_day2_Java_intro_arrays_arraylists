@@ -21,4 +21,12 @@ public class NumberList {
         return this.numbers.get(ind);
     }
 
+    public int getTotal() {
+        int total = 0;
+        for (int i=0; i < this.numbers.size(); i++) {
+            total = total + getNumberAtIndex(i);
+        }
+        return total;
+    }
+
 }

@@ -29,4 +29,13 @@ public class NumberListTest {
         assertEquals(12, myNumbers.getNumberAtIndex(0));
     }
 
+    @Test
+    public void cenGetTotal() {
+        myNumbers.addNumber(1);
+        myNumbers.addNumber(2);
+        myNumbers.addNumber(3);
+        myNumbers.addNumber(4);
+        assertEquals(10, myNumbers.getTotal());
+    }
+
 }

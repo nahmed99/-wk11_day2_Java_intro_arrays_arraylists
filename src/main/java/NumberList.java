@@ -22,9 +22,19 @@ public class NumberList {
     }
 
     public int getTotal() {
+
+//        int total = 0;
+//        for (int i=0; i < this.numbers.size(); i++) {
+//            total += getNumberAtIndex(i);
+//        }
+//        return total;
+
+
+        // An alternative way to (for) loop - similar to JS and Python
+
         int total = 0;
-        for (int i=0; i < this.numbers.size(); i++) {
-            total += getNumberAtIndex(i);
+        for(int number : this.numbers) {
+            total += number;
         }
         return total;
     }
